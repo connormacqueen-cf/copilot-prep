@@ -42,6 +42,6 @@ def api_root_with_env(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', api_root_with_env, name='api-root'),
-    path('api/', include(router.urls)),
+    path('', api_root_with_env, name='api-root'),
+    path('', include(router.urls)),
 ]
